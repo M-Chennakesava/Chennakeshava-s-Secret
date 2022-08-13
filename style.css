@@ -37,7 +37,33 @@ nav{
 }
 .text h1{
     font-size: 40px;
+    animation-name:secret;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
 }
+@keyframes secret{
+         0%{
+             text-decoration: underline solid 2px violet;
+         }
+         25%{
+             transform: rotate(-10deg);
+             color:red;
+             text-decoration-line:dotted solid 2px violet;;
+         }
+         50%{
+             text-decoration: underline solid 2px violet;
+
+         }
+         75%{
+             transform: rotate(10deg);
+             color: blue;
+             text-decoration-line:dotted solid 2px violet;;
+         }
+         100%{
+             text-decoration: underline solid 2px violet;
+         }
+     }
 .text h2{
     font-size: 25px;
 }
